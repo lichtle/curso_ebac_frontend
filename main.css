@@ -212,7 +212,7 @@ header .container ul li a:hover,
 }
 
 #contact li {
-  display: block;
+  list-style: none;
   margin-bottom: 8px;
   font-size: 20px;
 }
