@@ -24,7 +24,8 @@ h3 {
 /* HEADER */
 
 header .container,
-#adopt h2 {
+#adopt h2,
+#contact h2 {
   background-color: #86cd82;
 }
 
@@ -37,7 +38,8 @@ header .container {
 
 header .container h1,
 header .container ul li a,
-#adopt h2 {
+#adopt h2,
+#contact h2 {
   color: #fff;
 }
 
@@ -68,7 +70,8 @@ header .container ul li {
 
 header .container ul li,
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
 }
 
@@ -78,8 +81,11 @@ header .container ul li a {
   transition: 0.3s ease-in-out;
 }
 
+header .container ul li a:hover,
 #about .container h2,
-header .container ul li a:hover {
+#contact h3,
+#contact li i,
+#contact li a {
   color: #4b7248;
 }
 
@@ -96,7 +102,8 @@ header .container ul li a:hover {
 }
 
 #about .container h2,
-#adopt .container h2 {
+#adopt .container h2,
+#contact .container h2 {
   font-size: 28px;
 }
 
@@ -106,19 +113,22 @@ header .container ul li a:hover {
 
 /* ADOPT SECTION */
 
-#adopt .container h2 {
+#adopt .container h2,
+#contact .container h2 {
   margin: 32px 0;
   padding: 10px;
 }
 
 #adopt .container h2,
+#contact .container h2,
 #adopt .container .animals div {
   text-align: center;
 }
 
-#adopt .container .animals {
+#adopt .container .animals,
+#contact .container .contact-options {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -134,4 +144,78 @@ header .container ul li a:hover {
   width: 300px;
   height: 300px;
   object-fit: cover;
+}
+
+/* CONTACT SECTION */
+
+#contact h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.contact-options div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input,
+#contact button,
+#contact textarea {
+  width: 360px;
+}
+
+#contact form input,
+#contact button {
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+#contact textarea {
+  height: 150px;
+  resize: none;
+  padding: 10px;
+}
+
+#contact textarea,
+#contact form input,
+#contact button {
+  font-size: 16px;
+}
+
+#contact button {
+  background-color: #4b7248;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#contact button:hover {
+  opacity: 0.8;
+}
+
+#contact iframe {
+  width: 400px;
+  height: 380px;
+}
+
+#contact li {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+#contact li i {
+  margin-right: 8px;
+}
+
+#contact li a {
+  text-decoration: none;
+}
+
+#contact li a:hover {
+  text-decoration: underline;
 }
