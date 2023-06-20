@@ -12,21 +12,27 @@
       <img src="images/Sonya-Swarm-Cat.256.png" alt="Ícone de gatinho" />
       <!-- Icon by: https://www.iconarchive.com/show/swarm-icons-by-sonya/Cat-icon.html -->
 
-      <form>
+      <form id="form-numeros">
         <input
           type="number"
           min="0"
           placeholder="Insira o ano do seu nascimento"
+          required
           id="numero-a"
         />
         <input
           type="number"
           min="0"
           placeholder="Insira o ano atual"
+          required
           id="numero-b"
         />
-        <button type="submit">Enviar</button>
+        <button type="submit" id="submit-btn">Enviar</button>
       </form>
+      <p id="error-message">
+        Erro: o ano atual não pode ser menor que o ano de nascimento!
+      </p>
+      <p id="success-message">Tudo certo com o seu formulário!</p>
     </div>
     <script src="index.js"></script>
   </body>
