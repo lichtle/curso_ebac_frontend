@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   background-color: #fcc4cc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -39,7 +40,9 @@ button {
   padding: 8px 5px;
 }
 
-form {
+input,
+#error-message,
+#success-message {
   text-align: center;
 }
 
@@ -52,4 +55,22 @@ button {
 
 button {
   cursor: pointer;
+}
+
+#error-message,
+#success-message {
+  display: none;
+  width: 100%;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#error-message {
+  background-color: #d40000;
+}
+
+#success-message {
+  background-color: #048000;
 }
