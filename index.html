@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Afazeres</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Exercício - HTML e JS</title>
   </head>
   <body>
     <div class="container">
-      <p class="intro-paragraph">EBAC - Exercício de HTML e JS</p>
-      <img src="images/Sonya-Swarm-Cat.256.png" alt="Ícone de gatinho" />
-      <!-- Icon by: https://www.iconarchive.com/show/swarm-icons-by-sonya/Cat-icon.html -->
-
-      <form id="form-numeros">
-        <input
-          type="number"
-          min="0"
-          placeholder="Insira o ano do seu nascimento"
-          required
-          id="numero-a"
-        />
-        <input
-          type="number"
-          min="0"
-          placeholder="Insira o ano atual"
-          required
-          id="numero-b"
-        />
-        <button type="submit" id="submit-btn">Enviar</button>
+      <h1>Lista de afazeres</h1>
+      <form>
+        <input type="text" id="task" required placeholder="Isira seu afazer" />
+        <button type="submit">Inserir +</button>
       </form>
-      <p id="error-message">
-        Erro: o ano atual não pode ser menor que o ano de nascimento!
-      </p>
-      <p id="success-message">Tudo certo com o seu formulário!</p>
+      <ul>
+        <li>exemplo</li>
+      </ul>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

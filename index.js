@@ -1,21 +1,16 @@
-let numA = document.getElementById("numero-a");
-let numB = document.getElementById("numero-b");
-let form = document.getElementById("form-numeros"); // Adicionar o escutador no formulário todo, e não só no botão de submit
-let errorMessage = document.getElementById("error-message");
-let successMessage = document.getElementById("success-message");
+$(document).ready(function () {
+  $("form").submit(function (e) {
+    e.preventDefault();
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault(); // Impede que o formulário atualize assim que o botão de submit for ativado. Se não colocarmos essa condição, as mensagens de sucesso ou erro mal aparecerão, porque a página será atualizada logo em seguida
+    const task = $("#task").val(); // Captura o valor inserido no input
+    const novoItem = $(`<li>${task}</li>`);
 
-  let formEValido = numB.value > numA.value; // Adicionar a condição no escopo do event listener, ou escrevê-la como uma função fora do escopo do event listener
+    novoItem.appendTo("ul"); // Colocando a nova linha criada acima (contendo o valor inserido no input) dentro da lista ul
 
-  if (formEValido) {
-    numA.value = "";
-    numB.value = "";
-    successMessage.style.display = "block";
-    errorMessage.style.display = "none";
-  } else {
-    errorMessage.style.display = "block";
-    successMessage.style.display = "none";
-  }
+    $("#task").val("");
+  });
+
+  $("ul li").click(function () {
+    $("ul li").toggleClass("task-completed");
+  });
 });
