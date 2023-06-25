@@ -51,6 +51,6 @@ ul li {
   list-style: square;
 }
 
-.task-completed {
+.completed {
   text-decoration: line-through;
 }
