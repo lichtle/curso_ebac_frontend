@@ -8,14 +8,46 @@
   </head>
   <body>
     <div class="container">
-      <h1>Lista de afazeres</h1>
+      <h1>Formulário</h1>
       <form>
-        <input type="text" id="task" required placeholder="Isira seu afazer" />
-        <button type="submit">Inserir +</button>
+        <label for="name">Nome completo *</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Insira seu nome completo"
+        />
+        <span class="name-error">Por favor, digite seu nome completo.</span>
+        <label for="email">E-mail *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Insira seu endereço de e-mail"
+        />
+        <label for="phone">Telefone *</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="id-number">CPF *</label>
+        <input type="text" id="id-number" name="idNumber" />
+        <label for="address">Endereço completo *</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Insira seu endereço completo"
+        />
+        <label for="zip-code">CEP *</label>
+        <input type="text" id="zip-code" name="zipCode" />
+        <button type="submit">Enviar</button>
       </form>
       <ul></ul>
     </div>
+    <!-- jQuery + Plugins -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="index.js"></script>
+    <script src="javascript/jquery.validate.min.js"></script>
+    <script src="javascript/messages_pt_BR.min.js"></script>
+    <script src="javascript/jquery.mask.min.js"></script>
+    <!-- JavaScript -->
+    <script src="javascript/index.js"></script>
   </body>
 </html>
