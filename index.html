@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Afazeres</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+
+      h1.h2 {
+        margin-bottom: 18px;
+      }
+
+      input {
+        margin-bottom: 8px;
+      }
+
+      button {
+        margin-top: 8px;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Formulário</h1>
-      <form>
-        <label for="name">Nome completo *</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Insira seu nome completo"
-        />
-        <span class="name-error">Por favor, digite seu nome completo.</span>
-        <label for="email">E-mail *</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Insira seu endereço de e-mail"
-        />
-        <label for="phone">Telefone *</label>
-        <input type="tel" id="phone" name="phone" />
-        <label for="id-number">CPF *</label>
-        <input type="text" id="id-number" name="idNumber" />
-        <label for="address">Endereço completo *</label>
-        <input
-          type="text"
-          id="address"
-          name="address"
-          placeholder="Insira seu endereço completo"
-        />
-        <label for="zip-code">CEP *</label>
-        <input type="text" id="zip-code" name="zipCode" />
-        <button type="submit">Enviar</button>
-      </form>
-      <ul></ul>
+      <div class="row">
+        <div class="col">
+          <h1 class="h2">Formulário de envio</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form>
+            <label class="form-label" for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" />
+            <label class="form-label" for="nome">E-mail:</label>
+            <input class="form-control" type="email" id="email" />
+            <label class="form-label" for="telefone">Telefone:</label>
+            <input class="form-control" type="tel" id="telefone" />
+            <button class="btn btn-success" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <!-- jQuery + Plugins -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="javascript/jquery.validate.min.js"></script>
-    <script src="javascript/messages_pt_BR.min.js"></script>
-    <script src="javascript/jquery.mask.min.js"></script>
-    <!-- JavaScript -->
-    <script src="javascript/index.js"></script>
   </body>
 </html>
