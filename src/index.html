@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dev/styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="login">
+          <h1>Login</h1>
+          <form>
+            <label for="email">E-mail:</label
+            ><input
+              type="mail"
+              id="mail"
+              placeholder="Insira seu e-mail"
+              required
+            />
+            <label for="pw">Senha:</label
+            ><input
+              type="password"
+              id="pw"
+              placeholder="Insira sua senha"
+              required
+            />
+            <button type="submit" class="submit-btn">Entrar</button>
+          </form>
+          <p><a href="#">Esqueci minha senha</a></p>
+          <p class="message">
+            Login realizado com sucesso! Você será redirecionado em poucos
+            segundos...
+          </p>
+          <p class="err-message">
+            Preencha todos os campos para prosseguir!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
