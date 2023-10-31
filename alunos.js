@@ -6,8 +6,6 @@ const alunos = [
   { nome: "João", nota: 6 },
 ];
 
-alunos.forEach(function (item) {
-  if (item.nota >= 6) {
-    console.log(item);
-  }
-});
+let notaMaiorQueSeis = alunos.filter((aluno) => aluno.nota >= 6);
+
+console.log(notaMaiorQueSeis);
